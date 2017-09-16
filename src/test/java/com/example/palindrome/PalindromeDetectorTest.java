@@ -34,4 +34,9 @@ public class PalindromeDetectorTest {
   public void shouldAcceptRepeatedCharacter() {
     assertTrue(isPalindrome("mm"));
   }
+
+  @Test
+  public void shouldRejectDifferentCharacters() {
+    assertFalse(isPalindrome("mk"));
+  }
 }
