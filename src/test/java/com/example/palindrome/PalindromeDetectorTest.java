@@ -11,12 +11,12 @@ import static org.testng.Assert.assertTrue;
  */
 public class PalindromeDetectorTest {
   @Test
-  public void shouldHandleSingleCharacters() {
+  public void shouldApproveSingleCharacter() {
     assertTrue(isPalindrome("a"));
   }
 
   @Test
-  public void shouldHandleOtherSingleCharacter() {
+  public void shouldApproveOtherSingleCharacter() {
     assertTrue(isPalindrome("b"));
   }
 
@@ -31,7 +31,7 @@ public class PalindromeDetectorTest {
   }
 
   @Test
-  public void shouldAcceptRepeatedCharacter() {
+  public void shouldApproveRepeatedCharacter() {
     assertTrue(isPalindrome("mm"));
   }
 
