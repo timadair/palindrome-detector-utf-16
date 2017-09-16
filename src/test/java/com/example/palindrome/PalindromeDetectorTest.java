@@ -44,4 +44,14 @@ public class PalindromeDetectorTest {
   public void shouldBeCaseInsensitive() {
     assertTrue(isPalindrome("mM"));
   }
+
+  @Test
+  public void shouldApproveMom() {
+    assertTrue(isPalindrome("Mom"));
+  }
+
+  @Test
+  public void shouldRejectMok() {
+    assertFalse(isPalindrome("mop"));
+  }
 }
