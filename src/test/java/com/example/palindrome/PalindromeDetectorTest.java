@@ -29,4 +29,9 @@ public class PalindromeDetectorTest {
   public void shouldRejectEmptyString() {
     assertFalse(isPalindrome(""));
   }
+
+  @Test
+  public void shouldAcceptRepeatedCharacter() {
+    assertTrue(isPalindrome("mm"));
+  }
 }

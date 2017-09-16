@@ -5,9 +5,11 @@ package com.example.palindrome;
  */
 public class PalindromeDetector {
   public static boolean isPalindrome(String candidate) {
-    if (candidate == null) {
+    if (candidate == null || candidate.length() == 0) {
       return false;
     }
-    return candidate.length() == 1;
+    int frontIndex = 0;
+    int backIndex = candidate.length() - 1;
+    return candidate.charAt(frontIndex) == candidate.charAt(backIndex);
   }
 }
