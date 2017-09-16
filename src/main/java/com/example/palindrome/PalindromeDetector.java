@@ -8,8 +8,9 @@ public class PalindromeDetector {
     if (candidate == null || candidate.length() == 0) {
       return false;
     }
+    String casedCandidate = candidate.toLowerCase();
     int frontIndex = 0;
-    int backIndex = candidate.length() - 1;
-    return candidate.charAt(frontIndex) == candidate.charAt(backIndex);
+    int backIndex = casedCandidate.length() - 1;
+    return casedCandidate.charAt(frontIndex) == casedCandidate.charAt(backIndex);
   }
 }

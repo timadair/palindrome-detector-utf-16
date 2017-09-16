@@ -39,4 +39,9 @@ public class PalindromeDetectorTest {
   public void shouldRejectDifferentCharacters() {
     assertFalse(isPalindrome("mk"));
   }
+
+  @Test
+  public void shouldBeCaseInsensitive() {
+    assertTrue(isPalindrome("mM"));
+  }
 }
