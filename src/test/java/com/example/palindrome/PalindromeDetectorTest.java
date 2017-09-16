@@ -59,4 +59,9 @@ public class PalindromeDetectorTest {
   public void shouldRejectBulb() {
     assertFalse(isPalindrome("bulb"));
   }
+
+  @Test
+  public void shouldRejectTort() {
+    assertFalse(isPalindrome("tort"));
+  }
 }
