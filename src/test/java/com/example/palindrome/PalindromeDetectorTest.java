@@ -64,4 +64,9 @@ public class PalindromeDetectorTest {
   public void shouldRejectTort() {
     assertFalse(isPalindrome("tort"));
   }
+
+  @Test
+  public void shouldApproveDood() {
+    assertTrue(isPalindrome("dood"));
+  }
 }
