@@ -24,4 +24,9 @@ public class PalindromeDetectorTest {
   public void shouldRejectNull() {
     assertFalse(isPalindrome(null));
   }
+
+  @Test
+  public void shouldRejectEmptyString() {
+    assertFalse(isPalindrome(""));
+  }
 }
