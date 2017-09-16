@@ -69,4 +69,9 @@ public class PalindromeDetectorTest {
   public void shouldApproveDood() {
     assertTrue(isPalindrome("dood"));
   }
+
+  @Test
+  public void shouldIgnoreSpaces() {
+    assertTrue(isPalindrome("Euston saw I was not Sue"));
+  }
 }
