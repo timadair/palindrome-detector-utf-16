@@ -54,4 +54,9 @@ public class PalindromeDetectorTest {
   public void shouldRejectMok() {
     assertFalse(isPalindrome("mop"));
   }
+
+  @Test
+  public void shouldRejectBulb() {
+    assertFalse(isPalindrome("bulb"));
+  }
 }
