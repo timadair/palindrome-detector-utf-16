@@ -5,6 +5,6 @@ package com.example.palindrome;
  */
 public class PalindromeDetector {
   public static boolean isPalindrome(String candidate) {
-    return candidate.equals("a");
+    return candidate.length() == 1;
   }
 }

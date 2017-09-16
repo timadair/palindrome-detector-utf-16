@@ -14,4 +14,9 @@ public class PalindromeDetectorTest {
   public void shouldHandleSingleCharacters() {
     assertTrue(isPalindrome("a"));
   }
+
+  @Test
+  public void shouldHandleOtherSingleCharacter() {
+    assertTrue(isPalindrome("b"));
+  }
 }
