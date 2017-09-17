@@ -96,4 +96,10 @@ public class PalindromeDetectorTest {
     String twoTrebleClefs = "\uD834\uDD1E\uD834\uDD1E";
     assertTrue(isPalindrome(twoTrebleClefs));
   }
+
+  @Test(description = "I'm a tenor, so I see the second symbol (a treble clef shifted down an octave) a lot.")
+  public void shouldRejectUnmatchedSurrogatePairs() {
+    String trebleClefThenTrebleClefOttavaBassa = "\uD834\uDD1E\uD834\uDD20";
+    assertFalse(isPalindrome(trebleClefThenTrebleClefOttavaBassa));
+  }
 }
