@@ -84,4 +84,10 @@ public class PalindromeDetectorTest {
   public void shouldIgnorePunctuation() {
     assertTrue(isPalindrome("\"Deliver desserts,\" demanded Nemesis, \"emended, named, stressed, reviled.\""));
   }
+
+  @Test(description = "Technically, this symbol should probably be excluded, but there are language characters with the same problem.")
+  public void shouldConsiderSurrogatePairOfTrebleClefAsOneCharacter() {
+    String trebleClef = "\uD834\uDD1E";
+    assertTrue(isPalindrome(trebleClef));
+  }
 }
