@@ -90,4 +90,10 @@ public class PalindromeDetectorTest {
     String trebleClef = "\uD834\uDD1E";
     assertTrue(isPalindrome(trebleClef));
   }
+
+  @Test
+  public void shouldConsiderTwoSurrogatePairsAsTwoCharacters() {
+    String twoTrebleClefs = "\uD834\uDD1E\uD834\uDD1E";
+    assertTrue(isPalindrome(twoTrebleClefs));
+  }
 }

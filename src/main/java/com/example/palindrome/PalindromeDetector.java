@@ -1,6 +1,7 @@
 package com.example.palindrome;
 
 import static java.lang.Character.isHighSurrogate;
+import static java.lang.Character.isLowSurrogate;
 
 /**
  * Created by timadair on 9/16/2017.
@@ -19,6 +20,11 @@ public class PalindromeDetector {
       if (casedCandidate.charAt(frontIndex) != casedCandidate.charAt(backIndex)) {
         if (isHighSurrogate(casedCandidate.charAt(frontIndex))) {
           if (casedCandidate.charAt(frontIndex) != casedCandidate.charAt(backIndex - 1)) {
+            match = false;
+          }
+        }
+        else if (isLowSurrogate(casedCandidate.charAt(frontIndex))) {
+          if (casedCandidate.charAt(frontIndex) != casedCandidate.charAt(backIndex + 1)) {
             match = false;
           }
         }
