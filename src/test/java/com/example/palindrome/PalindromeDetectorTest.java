@@ -79,4 +79,9 @@ public class PalindromeDetectorTest {
   public void shouldIgnoreWhiteSpace() {
     assertTrue(isPalindrome("Euston saw\tI\nwas\n\rnot Sue"));
   }
+
+  @Test
+  public void shouldIgnorePunctuation() {
+    assertTrue(isPalindrome("\"Deliver desserts,\" demanded Nemesis, \"emended, named, stressed, reviled.\""));
+  }
 }

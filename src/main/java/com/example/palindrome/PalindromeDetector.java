@@ -8,7 +8,7 @@ public class PalindromeDetector {
     if (candidate == null || candidate.length() == 0) {
       return false;
     }
-    String casedCandidate = candidate.toLowerCase().replaceAll("\\s", "");
+    String casedCandidate = candidate.toLowerCase().replaceAll("[\\s\\p{Punct}]", "");
     int frontIndex = 0;
     int backIndex = casedCandidate.length() - 1;
     boolean match = true;
