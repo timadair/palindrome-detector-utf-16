@@ -74,4 +74,9 @@ public class PalindromeDetectorTest {
   public void shouldIgnoreSpaces() {
     assertTrue(isPalindrome("Euston saw I was not Sue"));
   }
+
+  @Test
+  public void shouldIgnoreWhiteSpace() {
+    assertTrue(isPalindrome("Euston saw\tI\nwas\n\rnot Sue"));
+  }
 }
