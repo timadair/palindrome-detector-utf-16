@@ -1,1 +1,7 @@
-A project for practicing TDD on a common interview problem.  I'll be taking this a little beyond what is typical.
+A project for practicing TDD on a common interview problem.  This extends its application to palindromic code points, including UTF-16 surrogate pairs.
+
+This does not (yet) cover the following:
+-Multi-character letters, such as Spanish's ch or Hungarian's dsz.
+-Ligatures. 
+-Non-mirror image Chinese palindromes, especially Xuanji Tu (Google this)
+ 
